@@ -65,7 +65,7 @@
 <div style="color: white;margin-top: 50px;margin-left: 12px;">
 <span class="cali d-none"><span style="font-size: 50px;">V = P x L x T = </span> <span class="number1" style="font-size: 50px;">0</span><span style="font-size: 50px;"> x </span><span class="number2" style="font-size: 50px;">0 </span><span style="font-size: 50px;"> x </span><span class="number3" style="font-size: 50px;">0</span><span style="font-size: 50px;"> = </span><span style="font-size: 50px;" class="hasil">0</span></span><br>
 <span class="dali d-none"><span style="font-size: 40px;">L= 2 x (p x l + p x t + l x t) = </span><span  style="font-size: 40px;">2 (</span><span  style="font-size: 40px; " class="number1a">0 </span><span style="font-size: 40px; "> x </span><span class="number2b" style="font-size: 40px; "> 0</span><span style="font-size: 40px; "> + </span><span class="number1aa" style="font-size: 40px; ">0</span><span style="font-size: 40px; "> x </span><span class="number3c" style="font-size: 40px; ">0</span><span style="font-size: 40px; ">+</span><span class="number2bb" style="font-size: 40px; ">0</span><span style="font-size: 40px; " > x </span><span class="number3cc"style="font-size: 40px; " >0</span><span style="font-size: 40px; ">) = </span><span class="lhasil" style="font-size: 40px; "></span>
-<h1>Kalau mau dipakai lagi rumusnya, refres webnya :) capek untuk setting lagi :)</h1>
+<h1>Kalau mau dipakai lagi rumusnya, refres webnya :)</h1>
 </div>
 <h2 style="z-index:2; margin-left: 180px;margin-top: 100px; position: absolute;" class="muncul1 d-none">1</h2>
 <h2 style="z-index:2; margin-left: 180px;margin-top: 190px; position: absolute;" class="muncul2 d-none">2</h2>
@@ -97,7 +97,7 @@
 <div style="color: white;margin-top: 50px;margin-left: 12px;">
       <span style="font-size: 40px;" class="keliling d-none"><span>K = a + b + c + d = </span><span id="nom1">0</span><span> + </span><span id="nom2">0</span><span> + </span><span id="nom3">0</span><span> + </span><span id="nom4"> 0 </span><span> = </span><span id="jumlah1">0</span></span><br>
       <span style="font-size: 30px" class="luas d-none"><span>L = <sup>a+b</sup>/<sub>2</sub>xt = </span><sup id="numer1">a</sup><sup>+</sup><sup id="numer2">b</sup>/<sub>2</sub>x<span id="numer3">t</span><span> = </span><span id="jumlah2">0</span></span></span>
-      <h1 class="ket d-none">Kalau mau dipakai lagi rumusnya, refres webnya :) capek untuk setting lagi :)</h1>
+      <h1 class="ket d-none">Kalau mau dipakai lagi rumusnya, refres webnya :)</h1>
 </div>
     </div>    
 </div>
@@ -125,20 +125,21 @@
     <div style="color: white;margin-top: 50px;margin-left: 12px;">
           <span style="font-size: 40px;" class="kelilingsegitiga d-none"><span>K = a + b + c = </span><span id="nomora">0</span><span> + </span><span id="nomorb">0</span><span> + </span><span id="nomorc">0</span><span> + </span><span> = </span><span id="shasil">0</span></span><br>
           <span style="font-size: 30px" class="luassegitiga d-none"><span>L = 0.5 x a x t = <span>0.5 x </span><span id="number1ae">a</span><span> x </span><span  id="number1te">t</span><span> = </span><span id="slhasil">0</span></span>
-          <h1 class="keterangansegitiga d-none" style="font-size: large;">Kalau mau dipakai lagi rumusnya, refres webnya :) capek untuk setting lagi :)</h1>
+          <h1 class="keterangansegitiga d-none" style="font-size: large;">Kalau mau dipakai lagi rumusnya, refres webnya :)</h1>
     </div>
         </div>    
     </div>
     </div>
     <hr>
-<h4 align="center" style="color: white;">Copyright by Christama Ezra Yudianto(10a5-05)</h4>
+
+ <h4 align="center" style="color: white;">Copyright by<a href="https://github.com/ezra1702/javascript_informatika" style="color: red;text-decoration: underline;"> Christama Ezra Yudianto(10a5-05)</h4></a>
 <hr>
 
 <!-- Tlit-->
 <script type="text/javascript" src="tlit.js"></script>
 <!-- My Javacript-->
 <script>
-//gambar symbol emoticon
+//gambar symbol emoticon kalau taruh selesai blank websitenya
 document.write("<img src='https://previews.123rf.com/images/passatic/passatic2001/passatic200100095/138667651-smiley-face-emoji-symbol-icon-isolated-vector-illustration.jpg' width='50'>")
 document.write("<img src='https://e7.pngegg.com/pngimages/142/913/png-clipart-smiley-emoticon-computer-icons-desktop-emoticon-smiley-face-smiley.png' width='50' height='50'>")
 document.write("<img src='https://e7.pngegg.com/pngimages/624/33/png-clipart-smiley-emoticon-open-graphics-smiley-miscellaneous-smiley.png' width='50'  height='50'>")
@@ -157,6 +158,10 @@ const judul = document.querySelector('#judul');
 
 
 
+VanillaTilt.init(document.querySelectorAll(".dimensi"), {
+		max: 85,
+		speed: 400
+	});
 
 
 /* Rumus Balok*/
@@ -186,19 +191,19 @@ const dali = document.querySelector('.dali')
 
 //validasi hitung
 if(P == "" && L == "" && T == ""){
-    alert('masukan semua angka dulu!');
+    alert('masukan semua angka dulu!  dalam cm');
     return;
 }
 if (P == "") {
-    alert("Kalau Panjangnya belum di isi, Mana Bisa dihitung!");
+    alert("Kalau Panjangnya belum di isi, Mana Bisa dihitung!  dalam cm");
      return;
 };
 if (L == "") {
-alert("Kalau Lebarnya belum di isi, Mana Bisa dihitung!");
+alert("Kalau Lebarnya belum di isi, Mana Bisa dihitung!  dalam cm");
 return;  
 };
 if (T == "") {
-    alert("Kalau Tingginya belum di isi, Mana Bisa dihitung!");
+    alert("Kalau Tingginya belum di isi, Mana Bisa dihitung!  dalam cm");
     return;
 }
 else{
@@ -226,15 +231,9 @@ else{
     menghitung.classList.toggle('d-none')
      }
 });   
-    VanillaTilt.init(document.querySelectorAll(".dimensi"), {
-		max: 85,
-		speed: 400
-	});
-
-
-
-
+   
 /* Rumus Trapesium */
+//input
 const tombol2 = document.getElementById('hitung2');
 tombol2.addEventListener("click", () => {
 const keliling = document.querySelector('.keliling');
@@ -260,29 +259,30 @@ const numer3 = document.getElementById('numer3')
 const jumlah1 = document.getElementById('jumlah1');
 const jumlah2 = document.getElementById('jumlah2');
 const keterangan = document.getElementsByClassName('ket')[0];
+//output dan proses
 //validasi hitung
 if(a == "" && b == "" && c == "" && d == "" && t == ""){
-    alert('masukan semua angka dulu!');
+    alert('masukan semua angka dulu!  dalam cm');
     return;
 }
 if (a == "") {
-    alert("Angka harus dimasukan!");
+    alert("Angka harus dimasukan!  dalam cm");
      return;
 };
 if (b == "") {
-    alert("Angka harus dimasukan!");
+    alert("Angka harus dimasukan!  dalam cm");
     return;  
 };
 if (c == "") {
-    alert("Angka harus dimasukan!");
+    alert("Angka harus dimasukan! dalam cm");
     return;
 }
 if (d == "") {
-    alert("Angka harus dimasukan!");
+    alert("Angka harus dimasukan! dalam cm");
     return;
 }
 if (t == "") {
-    alert("Angka harus dimasukan!");
+    alert("Angka harus dimasukan!  dalam cm");
     return;
 }
 else{
@@ -380,7 +380,7 @@ rmssegitiga.addEventListener("click", () => {
     rmsbalok.classList.toggle('d-none');
     rmstrapesium.classList.toggle('d-none');
     rmssegitiga.classList.toggle('d-none');
-    judul.innerHTML = "Pilih Rumus Apa yang mau anda pakai";
+    judul.innerHTML = "Masukan Angka! dalam satuan cm";
 });
 kembali1.addEventListener("click", () => {
     penbalok.classList.toggle('d-none');
