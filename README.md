@@ -1,2 +1,2 @@
 # javascript_informatika by Ezra
-Hanya Sebuah Latihan seklolah yang di ulpluad di github :)
+Hanya Sebuah Latihan seklolah yang di upload di github :)
